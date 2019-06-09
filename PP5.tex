@@ -189,7 +189,7 @@ Infine, si osserva che il fit relativo alla taratura della $\lambda/4$ si discos
 %==================================================
 \section{Controllo di funzionamento del polarimetro}
 
-Si verifica il corretto allineamento delle lamine ritardanti nel modo seguente: la lamina $\lambda/4$ viene tenuta fissa ad un angolo pari a $\xi_0 + 45\degree$ mentre si varia l'angolo $\theta$ della lamina $\lambda/2$. Si misura l'intensità della luce all'uscita del secondo beam-splitter polarizzatore. I risultati sono riportati nella figura \ref{fig:align} e nella tabelle \ref{tab:align}. In questa configurazione  si prevede che l'intensità misurata in funzione di $\theta$ sia costante, e ridotta di un fattore $r^2(\lambda / 2$) (rispettivamente, $r^2(\lambda/4)$) rispetto ai rispettivi massimi misurati nella sezione precedente. Ciò è dovuto all'introduzione di un'ulteriore lamina rispetto alle configurazioni utilizzate nella sezione 2. L'andamento sinusoidale osservato in figura{ref:align} è dovuto a imperfezioni nelle lamine che attenuano l'intensità della luce in maniera non omogenea rispetto alla direzione di polarizzazione. L'intensità media risulta essere 
+Si verifica il corretto allineamento delle lamine ritardanti nel modo seguente: la lamina $\lambda/4$ viene tenuta fissa ad un angolo pari a $\xi_0 + 45\SI{}{\degree}$ mentre si varia l'angolo $\theta$ della lamina $\lambda/2$.La posizione di partenza è quella in cui le due lamine hanno gli assi ottici sfasati di 45\SI{}{\degree}. Si misura l'intensità della luce all'uscita del secondo beam-splitter polarizzatore. I risultati sono riportati nella figura \ref{fig:align} e nella tabelle \ref{tab:align}. In questa configurazione  si prevede che l'intensità misurata in funzione di $\theta$ sia costante, e ridotta di un fattore $r^2(\lambda / 2$) (rispettivamente, $r^2(\lambda/4)$) rispetto ai  massimi misurati nella sezione precedente. Ciò è dovuto all'introduzione di un'ulteriore lamina rispetto alle configurazioni utilizzate nella sezione 2. L'andamento sinusoidale osservato in figura \ref{fig:align} è dovuto a imperfezioni nelle lamine che attenuano l'intensità della luce in maniera non omogenea rispetto alla direzione di polarizzazione. L'intensità media risulta essere 
 $$\overline{I} = \SI{3.844 \pm 0.001}{V}$$
 Confrontando con i massimi della sezione 2 troviamo 
 $$r^2(\lambda / 2) = \frac{\overline{I}}{\tilde{I}_0} = 0.506 \pm 0.007$$
@@ -198,7 +198,7 @@ $$r^2(lambda / 4) = \frac{\overline{I}}{I_0} = 0.86 \pm 0.01$$
 \begin{Figure}
 	\begin{center}
 	\includegraphics[width=\linewidth]{align.pdf}
-	\captionof{figure}{Intensità misurata tenendo la lamina $\lambda/4$ fissa a $\xi + 45 \degree$ e facendo variare l'angolo $\theta$ della lamina $\lambda/2$}
+	\captionof{figure}{Intensità misurata tenendo la lamina $\lambda / 4$ fissa a $\xi + 45 \SI{}{\degree}$ e facendo variare l'angolo $\theta$ della lamina $\lambda / 2$}
 	\label{fig:align}
 	\end{center}
 \end{Figure}
@@ -381,46 +381,46 @@ e lo sfasamento tra le due componenti è dato da $\delta = \arctan(s_3/s_2)$. Co
 \begin{center}
 \captionof{table}{Punti sperimentali per la verifica dell'allineamento delle due lamine}
 \label{tab:align}
-\begin{tabular}{lrrr}
+\begin{tabular}{|c|c|c|}
 \toprule
-{} &  \$\textbackslashtheta\$[°] &  \$I\$[V] &  \$\textbackslashsigma\_\{I\}\$[V] \\
+$\theta$[\SI{}{\degree} &  $I$[V] &  $sigma{I}$[V] \\
 \midrule
-0  &          0.0 &    3.92 &            0.01 \\
-1  &         10.0 &    3.75 &            0.01 \\
-2  &         20.0 &    3.61 &            0.01 \\
-3  &         30.0 &    3.57 &            0.02 \\
-4  &         40.0 &    3.66 &            0.01 \\
-5  &         50.0 &    3.800 &            0.005 \\
-6  &         60.0 &    3.950 &            0.005 \\
-7  &         70.0 &    4.07 &            0.01 \\
-8  &         80.0 &    4.07 &            0.005 \\
-9  &         90.0 &    3.97 &            0.01 \\
-10 &        100.0 &    3.83 &            0.01 \\
-11 &        110.0 &    3.690 &            0.005 \\
-12 &        120.0 &    3.63 &            0.01 \\
-13 &        130.0 &    3.66 &            0.01 \\
-14 &        140.0 &    3.77 &            0.01 \\
-15 &        150.0 &    3.880 &            0.005 \\
-16 &        160.0 &    3.960 &            0.005 \\
-17 &        170.0 &    3.95 &            0.001 \\
-18 &        180.0 &    3.870 &            0.005 \\
-19 &        190.0 &    3.780 &            0.005 \\
-20 &        200.0 &    3.670 &            0.005 \\
-21 &        210.0 &    3.67 &            0.01 \\
-22 &        220.0 &    3.77 &            0.01 \\
-23 &        230.0 &    3.930 &            0.005 \\
-24 &        240.0 &    4.06 &            0.001 \\
-25 &        250.0 &    4.070 &            0.005 \\
-26 &        260.0 &    4.04 &            0.01 \\
-27 &        270.0 &    3.93 &            0.01 \\
-28 &        280.0 &    3.810 &            0.005 \\
-29 &        290.0 &    3.73 &            0.01 \\
-30 &        300.0 &    3.720 &            0.005 \\
-31 &        310.0 &    3.77 &            0.01 \\
-32 &        320.0 &    3.89 &            0.01 \\
-33 &        330.0 &    3.980 &            0.005 \\
-34 &        340.0 &    4.00 &            0.01 \\
-35 &        350.0 &    3.97 &            0.01 \\
+0.0 &    3.92 &            0.01 \\
+10.0 &    3.75 &            0.01 \\
+20.0 &    3.61 &            0.01 \\
+30.0 &    3.57 &            0.02 \\
+40.0 &    3.66 &            0.01 \\
+50.0 &    3.800 &            0.005 \\
+60.0 &    3.950 &            0.005 \\
+70.0 &    4.07 &            0.01 \\
+80.0 &    4.07 &            0.005 \\
+90.0 &    3.97 &            0.01 \\
+100.0 &    3.83 &            0.01 \\
+110.0 &    3.690 &            0.005 \\
+120.0 &    3.63 &            0.01 \\
+130.0 &    3.66 &            0.01 \\
+140.0 &    3.77 &            0.01 \\
+150.0 &    3.880 &            0.005 \\
+160.0 &    3.960 &            0.005 \\
+170.0 &    3.95 &            0.001 \\
+180.0 &    3.870 &            0.005 \\
+190.0 &    3.780 &            0.005 \\
+200.0 &    3.670 &            0.005 \\
+210.0 &    3.67 &            0.01 \\
+220.0 &    3.77 &            0.01 \\
+230.0 &    3.930 &            0.005 \\
+240.0 &    4.06 &            0.001 \\
+250.0 &    4.070 &            0.005 \\
+260.0 &    4.04 &            0.01 \\
+270.0 &    3.93 &            0.01 \\
+280.0 &    3.810 &            0.005 \\
+290.0 &    3.73 &            0.01 \\
+300.0 &    3.720 &            0.005 \\
+310.0 &    3.77 &            0.01 \\
+320.0 &    3.89 &            0.01 \\
+330.0 &    3.980 &            0.005 \\
+340.0 &    4.00 &            0.01 \\
+350.0 &    3.97 &            0.01 \\
 \bottomrule
 \end{tabular}
 \end{center}
