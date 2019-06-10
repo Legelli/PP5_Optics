@@ -131,7 +131,7 @@ Si utilizza un laser He-Ne di lunghezza d'onda, dichiarata dal costruttore, $\la
 
 In serie al laser è posta un'iride, allo scopo di evitare l'ingresso nel laser dei fasci di ritorno, che ne perturberebbero il comportamento. Due specchi orientati a \SI{45}{\degree} portano il fascio ad incidere su un primo beam-splitter polarizzatore, seguito dalle due lamine di ritardo $\lambda / 2$ e $\lambda / 4$ e dal secondo beam-splitter polarizzatore. Successivamente, è posto il fotodiodo, utilizzato per misurare l'intensità del fascio.
 
-La configurazione utilizzata è illustrata in Figura~\ref{fig:diagram}; essa varierà nel corso dell'esperienza, e si farà riferimento a questa figura per indicare quali elementi vengano rimossi o spostati.
+La configurazione utilizzata è illustrata in Figura~\ref{fig:diagram}.
 
 \begin{Figure}
 	\begin{center}
@@ -142,15 +142,13 @@ La configurazione utilizzata è illustrata in Figura~\ref{fig:diagram}; essa var
 	\end{center}
 \end{Figure}
 
-Il segnale in uscita dal fotodiodo è inviato al multimetro \texttt{METEX M-4650}. Le misure di intensità luminosa vengono riportate come differenza di potenziale misurata ai capi del fotodiodo, pertanto è da intendere la presenza di un fattore di proporzionalità non noto. Inoltre, si regola con un filtro attenuatore l'intensità della luce emessa dal laser in modo da restare all'interno della regione di linearità del fotodiodo, ossia al di sotto di \SI{10}{V}. L'incertezza associata alle misure di intensità luminosa sarà fornita a seconda della cifra meno significativa riportata dallo strumento, e dipenderà dalla intensità stessa.
-
-
+Il segnale in uscita dal fotodiodo è inviato al multimetro \texttt{METEX M-4650}. Le misure di intensità luminosa vengono riportate come differenza di potenziale misurata ai capi del fotodiodo, pertanto è da intendere la presenza di un fattore di proporzionalità non noto.
 
 %==================================================
 %             TARATURA DEL POLARIMETRO
 %==================================================
 \section{Taratura del polarimetro}\label{sec:taratura}
-In questa sezione si rimuove la lamina $\lambda / 4$. Si utilizza il primo beam splitter polarizzatore per ottenere una luce polarizzata orizzontalmente (linearmente, in un piano parallelo al piano del tavolo ottico), questa viene fatta passare attraverso una lamina di ritardo $\lambda/2$ montata su una ghiera graduata che permette di controllarne la rotazione; il fascio in uscita dalla lamina viene fatto passare nel secondo beam splitter che ne seleziona la sola componente orizzontale, infine l'intensità di questo fascio viene misurata con il fotodiodo. Prima di compiere le misure si verifica il corretto allineamento dei fasci. 
+In questa sezione si rimuove la lamina $\lambda / 4$. Si utilizza il primo beam splitter polarizzatore per ottenere una luce polarizzata orizzontalmente (linearmente, in un piano parallelo al piano del tavolo ottico), questa viene fatta passare attraverso una lamina di ritardo $\lambda/2$ montata su una ghiera graduata che permette di controllarne la rotazione; il fascio in uscita dalla lamina viene fatto passare nel secondo beam splitter che ne seleziona la sola componente orizzontale, infine l'intensità di questo fascio viene misurata con il fotodiodo. 
 
 Si vuole trovare l'angolo $\theta_0$ della ghiera che corrisponde ad una situazione in cui l'asse principale della $\lambda/2$ è orizzontale.
 
@@ -161,20 +159,20 @@ In Figura \ref{fig:taratura_lambda2} è riportato l'andamento dell'intensità mi
 dove i parametri che meglio descrivono le misure sono $I_0 = \SI{4.48 \pm 0.05}{V}$ e ${\theta_0 = \SI{0.680\pm0.005}{rad}}$.
 \begin{Figure}
 	\begin{center}
-	\includegraphics[width=\linewidth]{taratura_lambda2.eps}
+	\includegraphics[width=0.9\linewidth]{taratura_lambda2.eps}
 	\captionof{figure}{Andamento della tensione misurata dal fotodiodo al variare dell'angolo di rotazione della lamina $\lambda/2$, ai dati è sovrapposto il fit del modello teorico}
 	\label{fig:taratura_lambda2}
 	\end{center}
 \end{Figure}
 
-Valutato l'angolo $\theta_0$ corrispondente all'asse principale della $\lambda/2$, si prosegue a valutare lo stesso angolo $\xi_0$ per la $\lambda/4$: quest'ultima viene montata tra il primo beam splitter e la $\lambda/2$, come da Figura~\ref{fig:diagram}. Avendo posizionato la seconda lamina di ritardo nella configurazione per cui l'asse è orizzontale (ossia all'angolo $\theta_0$ misurato precedentemente), si ruota la ghiera della $\lambda/4$ e si ottengono le misure riportate in Tabella \ref{tab:taratura_lambda4}, in Appendice, e in Figura \ref{fig:taratura_lambda4}; in quest'ultima è anche riportato il fit del modello teorico dato da
+Valutato l'angolo $\theta_0$ corrispondente all'asse principale della $\lambda/2$, si valuta lo stesso angolo $\xi_0$ per la $\lambda/4$: quest'ultima viene montata tra il primo beam splitter e la $\lambda/2$, come da Figura~\ref{fig:diagram}. Avendo posizionato la seconda lamina di ritardo nella configurazione per cui l'asse è orizzontale (ossia all'angolo $\theta_0$ misurato precedentemente), si ruota la ghiera della $\lambda/4$ e si ottengono le misure riportate in Tabella \ref{tab:taratura_lambda4}, in Appendice, e in Figura \ref{fig:taratura_lambda4}; in quest'ultima è anche riportato il fit del modello teorico dato da
 \begin{equation}
 	I(\xi) = \frac{\tilde{I}_0}{2}\Big( 1- \cos^2\big(2(\xi-\xi_0)\big)\Big)
 \end{equation}
 dove i parametri del fit che meglio descrivono le misure sono $\tilde{I}_0 = \SI{7.6\pm0.1}{V}$ e $\xi_0 = \SI{0.19\pm0.02}{rad}$.
 \begin{Figure}
 	\begin{center}
-	\includegraphics[width=\linewidth]{taratura_lambda4.eps}
+	\includegraphics[width=0.9\linewidth]{taratura_lambda4.eps}
 	\captionof{figure}{Andamento della tensione misurata dal fotodiodo al variare dell'angolo di rotazione della lamina $\lambda/4$, ai dati è sovrapposto il fit del modello teorico}
 	\label{fig:taratura_lambda4}
 	\end{center}
@@ -189,16 +187,12 @@ Infine, si osserva che il fit relativo alla taratura della $\lambda/4$ si discos
 %==================================================
 \section{Controllo di funzionamento del polarimetro}
 
-Si verifica il corretto allineamento delle lamine ritardanti nel modo seguente: la lamina $\lambda/4$ viene tenuta fissa ad un angolo pari a $\xi_0 + 45\SI{}{\degree}$ mentre si varia l'angolo $\theta$ della lamina $\lambda/2$.La posizione di partenza è quella in cui le due lamine hanno gli assi ottici sfasati di 45\SI{}{\degree}. Si misura l'intensità della luce all'uscita del secondo beam-splitter polarizzatore. I risultati sono riportati nella figura \ref{fig:align} e nella tabelle \ref{tab:align}. In questa configurazione  si prevede che l'intensità misurata in funzione di $\theta$ sia costante, e ridotta di un fattore $r^2(\lambda / 2$) (rispettivamente, $r^2(\lambda/4)$) rispetto ai  massimi misurati nella sezione precedente. Ciò è dovuto all'introduzione di un'ulteriore lamina rispetto alle configurazioni utilizzate nella sezione 2. L'andamento sinusoidale osservato in figura \ref{fig:align} è dovuto a imperfezioni nelle lamine che attenuano l'intensità della luce in maniera non omogenea rispetto alla direzione di polarizzazione. L'intensità media risulta essere 
-$$\overline{I} = \SI{3.844 \pm 0.001}{V}$$
-Confrontando con i massimi della sezione 2 troviamo 
-$$r^2(\lambda / 2) = \frac{\overline{I}}{\tilde{I}_0} = 0.506 \pm 0.007$$
-$$r^2(lambda / 4) = \frac{\overline{I}}{I_0} = 0.86 \pm 0.01$$
+Si verifica il corretto allineamento delle lamine di ritardo nel modo seguente: la lamina $\lambda/4$ viene tenuta fissa ad un angolo pari a $\xi_0 + 45\SI{}{\degree}$ mentre si varia l'angolo $\theta$ della lamina $\lambda/2$. Si misura l'intensità della luce all'uscita del secondo beam-splitter polarizzatore. I risultati sono riportati in Figura~\ref{fig:align} e nella Tabella~\ref{tab:align}, in Appendice. In questa configurazione si prevede che l'intensità misurata in funzione di $\theta$ sia costante; si realizza dunque un fit lineare dei dati sperimentali e si ottiene come valore del coefficiente angolare $m = \SI{4 \pm 2 e-4}{V / \text{grado}}$, compatibile con zero entro due deviazioni standard. Si osserva tuttavia un andamento sinusoidale, di ampiezza ridotta (al massimo \SI{0.5}{V}), che si ritiene sia dovuto a imperfezioni nelle lamine, che attenuano l'intensità della luce in maniera non omogenea rispetto alla direzione di polarizzazione. 
 
 \begin{Figure}
 	\begin{center}
-	\includegraphics[width=\linewidth]{align.pdf}
-	\captionof{figure}{Intensità misurata tenendo la lamina $\lambda / 4$ fissa a $\xi + 45 \SI{}{\degree}$ e facendo variare l'angolo $\theta$ della lamina $\lambda / 2$}
+	\includegraphics[width=0.9\linewidth]{align.pdf}
+	\captionof{figure}{Intensità misurata con $\lambda / 4$ a $\xi + 45 \SI{}{\degree}$ e al variare di $\theta$ della $\lambda / 2$}
 	\label{fig:align}
 	\end{center}
 \end{Figure}
@@ -225,25 +219,7 @@ s_2 &= \frac{I_2 - I_2'}{I_2 + I_2'} \\
 s_3 &= \frac{I_3 - I_3'}{I_3 + I_3'};
 \end{aligned}
 \]
-essi sono compresi tra $0$ e $1$, e si riferiscono, rispettivamente, alla polarizzazione lineare orizzontale e verticale, lineare a \SI{45}{\degree} e \SI{-45}{\degree} e circolare left e right. La misura di $I_i$ è compiuta ruotando le lamine di ritardo agli angoli riportati in Tabella~\ref{tab:misuraStokes}.
-
-\begin{center}
-\captionof{table}{Orientazione delle lamine per la misura dei parametri di Stokes}
-\label{tab:misuraStokes}
-\begin{tabular}{c|c|c}
- &  $\lambda / 4$: $\xi-\xi_0$ & $\lambda / 2$: $\theta-\theta_0$  \\
-\hline
-     $I_1$  &        \SI{0}{\degree} &         \SI{0}{\degree} \\
-     $I_1'$  &       \SI{0}{\degree} &         \SI{45}{\degree} \\
-     \hline 
-     $I_2$  &        \SI{45}{\degree} &         \SI{22.5}{\degree} \\
-     $I_2'$  &       \SI{45}{\degree} &         \SI{-22.5}{\degree} \\
-     \hline 
-     $I_3$  &        \SI{0}{\degree} &         \SI{22.5}{\degree} \\
-     $I_3'$	&		 \SI{90}{\degree} &         \SI{22.5}{\degree} \\
-\hline
-\end{tabular}
-\end{center}
+essi sono compresi tra $0$ e $1$, e si riferiscono, rispettivamente, alla polarizzazione lineare orizzontale e verticale, lineare a \SI{45}{\degree} e \SI{-45}{\degree} e circolare left e right. La misura di $I_i$ è compiuta ruotando le lamine di ritardo agli angoli riportati in Tabella~\ref{tab:misuraStokes}, in Appendice.
 
 Si osserva che con la normalizzazione sopra riportata si possono trascurare effetti di instabilità del laser o di deriva della intensità del fondo, nonché delle perdite per assorbimento per i vari componenti.
 
@@ -287,7 +263,7 @@ e lo sfasamento tra le due componenti è dato da $\delta = \arctan(s_3/s_2)$. Co
 \end{Figure}
 
 \subsection{Misura dei parametri di Stokes per luce polarizzata linearmente con un polaroid}
-Si mantiene inalterato il setup sperimentale aggiungendo un filtro polarizzatore prima della $\lambda/4$. Ruotando il polarizzatore si riesce a variare la polarizzazione del fascio mappando così i punti sulla sfera di Poincaré. Gli stati con polarizzazione pura si trovano sulla superficie della sfera in quanto $s^2 =1$ mentre gli stati misti si trovano all’interno suo interno avendo questi ultimi $s^2<1$. I dati sperimentali sono riportati in Tabella \ref{tab:ultima}. Si riportano in Figura (\ref{fig:piano}) e (\ref{fig:spazio}) i plot polari nel piano e nello spazio dei coefficienti di Stokes. 
+Si mantiene inalterato il setup sperimentale aggiungendo un filtro polarizzatore prima della $\lambda/4$. Ruotando il polarizzatore si varia la polarizzazione del fascio, mappando i punti sulla sfera di Poincaré. Gli stati con polarizzazione pura si trovano sulla superficie della sfera, in quanto $s^2 =1$, mentre gli stati misti si trovano all’interno, avendo $s^2<1$. I dati sperimentali sono riportati in Tabella~\ref{tab:ultima}. Si riportano in Figura~\ref{fig:piano} e~\ref{fig:spazio} i grafici nel piano e nello spazio dei coefficienti di Stokes. 
 
 \begin{Figure}
 	\begin{center}
@@ -304,7 +280,7 @@ Si mantiene inalterato il setup sperimentale aggiungendo un filtro polarizzatore
 	\end{center}
 \end{Figure}
 
-Osserviamo che i punti sperimentali sono per la maggior parte all'interno della sfera di Poincaré; i punti esterni con $s^2>1$ non hanno senso fisico e sono da imputare ad impurezze nel polaroid.
+Si osserva che i punti sperimentali sono per la maggior parte all'interno della sfera di Poincaré; i punti esterni con $s^2>1$ non hanno senso fisico e sono da imputare ad imperfezioni nel polaroid o ad un non corretto allineamento dei fasci.
 
 
 
@@ -312,7 +288,9 @@ Osserviamo che i punti sperimentali sono per la maggior parte all'interno della 
 %             CONCLUSIONI
 %==================================================
 \section{Conclusioni}
+Mediante il polarimetro realizzato con le lamine di ritardo $\lambda / 4$ e $\lambda / 2$ si è misurata la polarizzazione del laser He-Ne, che risulta essere prevalentemente lineare, con ridotta componente polarizzata circolarmente. Nel realizzare il polarimetro si è rivelato cruciale il corretto allineamento di tutti i fasci, in particolare dell'interfaccia della lamina $\lambda / 4$, che risulta essere più sensibile a lievi deviazioni dalla condizione di ortogonalità. Il controllo sul funzionamento del polarimetro ne ha confermato l'accuratezza, comunque affetta da imperfezioni dovute alla non completa planarità delle superfici e alle eventuali impurità presenti sulle stesse.
 
+La mappatura dei punti sulla sfera di Poincaré per stati della luce a polarizzazione lineare devia in alcuni casi dalla previsione teorica, e si ritiene che questo sia dovuto ad un non corretto allineamento del polarizzatore stesso, o all'usura delle superfici.
 
 \end{multicols}
 
@@ -320,7 +298,7 @@ Osserviamo che i punti sperimentali sono per la maggior parte all'interno della 
 \newpage
 \section{Appendice}
 
-\begin{minipage}[t]{.5\linewidth}
+\begin{minipage}[t]{0.3\linewidth}
 \begin{center}
 \captionof{table}{Punti sperimentali per la taratura della lamina $\lambda / 2$}
 \label{tab:taratura_lambda2}
@@ -360,7 +338,7 @@ Osserviamo che i punti sperimentali sono per la maggior parte all'interno della 
 \end{center}
 \end{minipage}
 \hspace{1em}
-\begin{minipage}[t]{.5\linewidth}
+\begin{minipage}[t]{0.3\linewidth}
 \begin{center}
 \captionof{table}{Punti sperimentali per la taratura della lamina $\lambda / 4$}
 \label{tab:taratura_lambda4}
@@ -394,14 +372,15 @@ Osserviamo che i punti sperimentali sono per la maggior parte all'interno della 
 \end{tabular}
 \end{center}
 \end{minipage}
-
-\begin{minipage}[t]{.5\linewidth}
+\hspace{1em}
+\begin{minipage}[t]{0.3\linewidth}
 \begin{center}
 \captionof{table}{Punti sperimentali per la verifica dell'allineamento delle due lamine}
 \label{tab:align}
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{c|c|c}
 \toprule
-$\theta$[\SI{}{\degree} &  $I$[V] &  $sigma{I}$[V] \\
+$\theta$[\SI{}{\degree}] &  $I$ [\SI{}{V}] &  $\sigma_{I}$ [\SI{}{V}] \\
+     $\pm 0.1$ & & \\
 \midrule
 0.0 &    3.92 &            0.01 \\
 10.0 &    3.75 &            0.01 \\
@@ -445,7 +424,27 @@ $\theta$[\SI{}{\degree} &  $I$[V] &  $sigma{I}$[V] \\
 \end{minipage}
 
 \vspace{1cm}
-\begin{minipage}[t]{.5\linewidth}
+\begin{minipage}[t]{.33\linewidth}
+\begin{center}
+\captionof{table}{Orientazione delle lamine per la misura dei parametri di Stokes}
+\label{tab:misuraStokes}
+\begin{tabular}{c|c|c}
+ &  $\lambda / 4$: $\xi-\xi_0$ & $\lambda / 2$: $\theta-\theta_0$  \\
+\hline
+     $I_1$  &        \SI{0}{\degree} &         \SI{0}{\degree} \\
+     $I_1'$  &       \SI{0}{\degree} &         \SI{45}{\degree} \\
+     \hline 
+     $I_2$  &        \SI{45}{\degree} &         \SI{22.5}{\degree} \\
+     $I_2'$  &       \SI{45}{\degree} &         \SI{-22.5}{\degree} \\
+     \hline 
+     $I_3$  &        \SI{0}{\degree} &         \SI{22.5}{\degree} \\
+     $I_3'$	&		 \SI{90}{\degree} &         \SI{22.5}{\degree} \\
+\hline
+\end{tabular}
+\end{center}
+\end{minipage}
+\hspace{1em}
+\begin{minipage}[t]{.33\linewidth}
 \begin{center}
 \captionof{table}{Punti sperimentali per la misura dei parametri di Stokes della luce uscente dal primo beam splitter polarizzatore}
 \label{tab:stokesBS}
@@ -465,7 +464,7 @@ $\theta$[\SI{}{\degree} &  $I$[V] &  $sigma{I}$[V] \\
 \end{center}
 \end{minipage}
 \hspace{1em}
-\begin{minipage}[t]{.5\linewidth}
+\begin{minipage}[t]{.33\linewidth}
 \begin{center}
 \captionof{table}{Punti sperimentali per la misura dei parametri di Stokes della luce uscente direttamente dal laser}
 \label{tab:stokesHeNe}
@@ -484,56 +483,54 @@ $\theta$[\SI{}{\degree} &  $I$[V] &  $sigma{I}$[V] \\
 \end{tabular}
 \end{center}
 \end{minipage}
+\newline
 
 \vspace{2cm}
 
-\centering
-\captionof{table}{Misure per la misura dei parametri di Stokes con polarizzatore}
+\begin{center}
+\captionof{table}{Punti sperimentali per la misura dei parametri di Stokes della luce polarizzata con un polaroid}
 \label{tab:ultima}
-\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c}
-$\theta$ [\SI{}{\degree}] & $I_1$ [\SI{}{V}] & $\sigma_{I_1}$ [\SI{}{V}] & $I_1'$ [\SI{}{V}] & $\sigma_{I_1'}$ [\SI{}{V}] & $I_2$ [\SI{}{V}] & $\sigma_{I_2}$ [\SI{}{V}] & $I_2'$ [\SI{}{V}] & $\sigma_{I_2'}$ [\SI{}{V}] & $I_3$ [\SI{}{V}] & $\sigma_{I_3}$ [\SI{}{V}] & $I_3'$ [\SI{}{V}] & $\sigma_{I_3'}$ [\SI{}{V}]  \\
-\hline
-  0 & 2.190 & 0.002 & 3.24 & 0.01 & 0.177 & 0.001 & 6.90 & 0.01 & 2.998 & 0.007 & 3.29 & 0.01 \\
-  60 & 4.41 & 0.01 & 0.43 & 0.01 & 2.35 & 0.01 & 0.119 & 0.001 & 0.70 & 0.01 & 0.342 & 0.001 \\
- 120 & 0.018 & 0.001 & 0.41 & 0.01 & 0.467 & 0.001 & 0.729 & 0.003 & 1.43 & 0.01 & 1.55 & 0.01 \\
- 180 & 2.560 & 0.005 & 2.64 & 0.01 & 0.294 & 0.001 & 5.76 & 0.01 & 2.45 & 0.01 & 2.42 & 0.01 \\
- 240 & 3.37 & 0.01 & 0.45 & 0.01 & 1.84 & 0.02 & 0.069 & 0.001 & 0.445 & 0.001 & 0.195 & 0.002 \\
- 300 & 0.02 & 0.001 & 0.57 & 0.01 & 0.505 & 0.003 & 1.054 & 0.005 & 1.553 & 0.004 & 1.69 & 0.01 \\
-  20 & 5.30 & 0.03 & 0.24 & 0.01 & 2.52 & 0.02 & 3.24 & 0.01 & 2.49 & 0.01 & 2.70 & 0.01 \\
-  40 & 2.16 & 0.02 & 0.83 & 0.01 & 3.20 & 0.02 & 0.65 & 0.01 & 1.652 & 0.004 & 1.71 & 0.01 \\
-  80 & 0.014 & 0.001 & 0.05 & 0.02 & 0.24 & 0.01 & 0.012 & 0.001 & 0.027 & 0.001 & 0.021 & 0.001 \\
- 100 & 0.021 & 0.001 & 1.30 & 0.03 & 0.153 & 0.001 & 0.217 & 0.001 & 0.432 & 0.001 & 0.330 & 0.002 \\
- 140 & 2.300 & 0.005 & 3.47 & 0.01 & 0.483 & 0.001 & 4.68 & 0.02 & 2.584 & 0.003 & 2.24 & 0.01 \\
- 160 & 5.30 & 0.02 & 1.72 & 0.01 & 0.046 & 0.001 & 7.02 & 0.01 & 3.24 & 0.01 & 3.22 & 0.01 \\
- \hline
+\begin{tabular}{c|c|c|c|c|c|c}
+\toprule
+$\theta$ [\SI{}{\degree}] & $I_1$ [\SI{}{V}] & $\sigma_{I_1}$ [\SI{}{V}] & $I_1'$ [\SI{}{V}] & $\sigma_{I_1'}$ [\SI{}{V}] & $I_2$ [\SI{}{V}] & $\sigma_{I_2}$ [\SI{}{V}]   \\
+\midrule
+  0  & 2.190 & 0.002 & 3.24 & 0.01 & 0.177 & 0.001 		\\		
+  60 & 4.41 & 0.01 & 0.43 & 0.01 & 2.35 & 0.01 			\\		
+ 120 & 0.018 & 0.001 & 0.41 & 0.01 & 0.467 	& 0.001 	\\		
+ 180 & 2.560 & 0.005 & 2.64 & 0.01 	& 0.294 & 0.001 	\\		
+ 240 & 3.37 & 0.01 & 0.45 & 0.01 & 1.84 & 0.02 			\\		
+ 300 & 0.02 & 0.001 & 0.57 & 0.01 & 0.505 & 0.003 		\\		
+  20 & 5.30 & 0.03 & 0.24 & 0.01 & 2.52 & 0.02 			\\		
+  40 & 2.16 & 0.02 & 0.83 & 0.01 & 3.20 & 0.02 			\\		
+  80 & 0.014 & 0.001 & 0.05 & 0.02 & 0.24 & 0.01 		\\		
+ 100 & 0.021 & 0.001 & 1.30 & 0.03 & 0.153 & 0.001 		\\		
+ 140 & 2.300 & 0.005 & 3.47 & 0.01 & 0.483 & 0.001 		\\		
+ 160 & 5.30 & 0.02 & 1.72 & 0.01 & 0.046 & 0.001 		\\		
+ \bottomrule
 \end{tabular}
- 
- 
- 
-%ESEMPIO DI FIGURA
-%\begin{Figure}
-%	\begin{center}
-%	\includegraphics[width=\linewidth]{comune.png}
-%	\captionof{figure}{Istantanea dell'oscilloscopio per l'amplificatore differenziale, misura di $A_c$}
-%	\label{fig:Ac_differenziale}
-%	\end{center}
-%\end{Figure}
+
+\vspace*{0.4cm}
+\centering
+\begin{tabular}{c|c|c|c|c|c|c}
+\toprule
+$\theta$ [\SI{}{\degree}] & $I_2'$ [\SI{}{V}] & $\sigma_{I_2'}$ [\SI{}{V}] & $I_3$ [\SI{}{V}] & $\sigma_{I_3}$ [\SI{}{V}] & $I_3'$ [\SI{}{V}] & $\sigma_{I_3'}$ [\SI{}{V}] \\
+\midrule
+  0  & 6.90 & 0.01 & 2.998 & 0.007 & 3.29 & 0.01 \\
+  60 & 0.119 & 0.001 & 0.70 & 0.01 & 0.342 & 0.001 \\
+ 120 & 0.729 & 0.003 & 1.43 & 0.01 & 1.55 & 0.01 \\
+ 180 & 5.76 & 0.01 & 2.45 & 0.01 & 2.42 & 0.01 \\
+ 240 & 0.069 & 0.001 & 0.445 & 0.001 & 0.195 & 0.002 \\
+ 300 & 1.054 & 0.005 & 1.553 & 0.004 & 1.69 & 0.01 \\
+  20 & 3.24 & 0.01 & 2.49 & 0.01 & 2.70 & 0.01 \\
+  40 & 0.65 & 0.01 & 1.652 & 0.004 & 1.71 & 0.01 \\
+  80 & 0.012 & 0.001 & 0.027 & 0.001 & 0.021 & 0.001 \\
+ 100 & 0.217 & 0.001 & 0.432 & 0.001 & 0.330 & 0.002 \\
+ 140 & 4.68 & 0.02 & 2.584 & 0.003 & 2.24 & 0.01 \\
+ 160 & 7.02 & 0.01 & 3.24 & 0.01 & 3.22 & 0.01 \\
+ \bottomrule
+\end{tabular}
+\end{center}
 
 
-%ESEMPIO DI TABELLA
-%\begin{center}
-%\captionof{table}{Misure per la stima di $A_c$}
-%\label{tab:Ac_differenziale}
-%\begin{tabular}{c|c|c|c}
-%$f$ [\SI{}{Hz}] & $V_i$ [\SI{}{V}] & $v_o$ [\SI{}{mV}] & $A_c = v_o / V_i$ \\
-%\hline
-%      149.5 &        3.90 &         11.3 & 2.90e-03 \\
-%      222.0 &        3.90 &         11.5 & 2.95e-03 \\
-%      281.0 &        3.90 &         11.8 & 3.03e-03 \\
-%      359.0 &        3.90 &         11.8 & 3.03e-03 \\
-%      461.0 &        3.90 &         12.2 & 3.13e-03 \\
-%\hline
-%\end{tabular}
-%\end{center}
 
 \end{document}
